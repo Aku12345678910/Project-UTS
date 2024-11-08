@@ -6,7 +6,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http_equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Login</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
@@ -16,15 +15,15 @@
         height: 100vh;
     }
     .login-box{
-        width: 300px;
-        height:500px;
+        width: 500px;
+        height: 400px;
         border: solid 1px;
         box-sizing: border-box;
         border-radius:10px;
     }
 </style>
 <body>
-    <div class="main d-flex justify-content-center align-items-center">
+    <div class="main d-flex flex-column justify-content-center align-items-center">
         <div class="login-box p-5 shadow">
             <form action="" method="post">
                 <div>
@@ -36,7 +35,7 @@
                     <input type="password" class="form-control" name="password" id="password">
                 </div>
                 <div>
-                    <button class="btn btn-success form-control mt-3" type="submit">Login</button>
+                    <button class="btn btn-success form-control mt-3" type="submit" name="loginbtn">Login</button>
                 </div>
             </form>
         </div>
@@ -49,9 +48,8 @@
                 $query = mysqli_query($con, "SELECT * FROM user WHERE username='$username'");
                 $countdata = mysqli_num_rows($query);
                 $data = mysqli_fetch_array($query);
-                    echo $data['password'];
                 if($countdata>0){
-                    if (password-verify($password, $data['password'])){
+                    if (password_verify($password, $data['password'])){
                         $_SESSION['username']=$data['username'];
                         $_SESSION['login']=true;
                         header('location:../admin');
