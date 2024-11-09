@@ -76,7 +76,7 @@
             </div>
         </div>
     </div>
-    <script src="..bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
 </body>
 </html>

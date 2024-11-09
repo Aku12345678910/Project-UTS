@@ -24,7 +24,7 @@
         box-shadow: 0 0 5px gold; 
     }
     body {
-        background-color: white;
+        background-color: #474C46;
         color: #333;
     }
     .breadcrumb {
@@ -67,12 +67,14 @@
         color: black;
     }
     .btn-submit {
-        background-color: #836C2D;
+        background-color:#246F13;
         border: none;
         border-radius: 3px;
-        color: black;
+        color: white;
         height: 40px;
         width: 70px;
+        border-color: #836C2D; 
+        box-shadow: 0 0 5px gold;
     }
 </style>
 
@@ -97,11 +99,11 @@
 
             <form action="" method="post">
                 <div>
-                    <label for="kategori">Kategori</label>
+                    <label for="kategori"></label>
                     <input type="text" id="kategori" name="kategori" placeholder="input nama kategori" class="form-control">
                 </div>
                 <div class="mt-3">
-                    <button type="submit" name="simpan_kategori" class="btn-submit"><b>Simpan</b></button>
+                    <button type="submit" name="simpan_kategori" class="btn-submit">Simpan</button>
                 </div>
             </form>
             <?php
@@ -163,7 +165,7 @@
                                     <td><?php echo $jumlah; ?></td>
                                     <td><?php echo $data['nama']; ?></td>
                                     <td>
-                                        <a href="kategori-detail.php?id=<?php echo $data['id']; ?>" class="btn btn-info">
+                                        <a href="kategori-detail.php?p=<?php echo $data['id']; ?>" class="btn btn-info">
                                             <i class="fas fa-search"></i>
                                         </a>
                                     </td>
