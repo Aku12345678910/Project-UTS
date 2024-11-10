@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Admin Home</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
 </head>
@@ -34,7 +34,7 @@
     }
 </style>
 <body>
-    <?php require "../navbar.php"; ?>
+    <?php require "navbar.php"; ?>
     <div class="container mt-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
