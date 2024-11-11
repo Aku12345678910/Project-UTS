@@ -24,7 +24,7 @@
         box-shadow: 0 0 5px gold; 
     }
     body {
-        background-color: #474C46;
+        background-color: #eeece3;
         color: #333;
     }
     .breadcrumb {
@@ -67,7 +67,7 @@
         color: black;
     }
     .btn-submit {
-        background-color:#246F13;
+        background-color:#629E34;
         border: none;
         border-radius: 3px;
         color: white;

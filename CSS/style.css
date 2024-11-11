@@ -7,3 +7,38 @@
 .warna3{
     background-color: #474C46;
 }
+.warna4{
+    background-color: #eeece3;
+}
+.banner{
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 4),rgba(0, 0, 0, 4)), url('../image/banner.png');
+}
+.highlighted-kategori{
+    height: 250px;
+}
+.kategori-sop{
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 4),rgba(0, 0, 0, 4)), url('../image/1.png');
+    background-size: cover;
+    background-position: center;
+}
+.kategori-rabbani{
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 4),rgba(0, 0, 0, 4)), url('../image/1.png');
+    background-size: cover;
+    background-position: center;
+}
+.kategori-drink{
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 4),rgba(0, 0, 0, 4)), url('../image/1.png');
+    background-size: cover;
+    background-position: center;
+}
+.no-decoration{
+    text-decoration: none;
+    color: white;
+}
+.no-decoration:hover{
+    color: #836C2D;
+}

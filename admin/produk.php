@@ -36,6 +36,68 @@ function generateRandomString($length = 10) {
     .form div {
         margin-bottom: 10px;
     }
+    .form-control:focus {
+        border-color: #836C2D; 
+        box-shadow: 0 0 5px gold; 
+    }
+    body {
+        background-color: #eeece3;
+        color: #333;
+    }
+    .breadcrumb {
+        background-color: transparent;
+    }
+    .breadcrumb-item a {
+        color: silver;
+    }
+    .breadcrumb-item.active {
+        color: #836C2D;
+    }
+    h3, h2 {
+        color: #836C2D;
+    }
+    .btn-info {
+        background-color: #836C2D;
+        border: none;
+        color: black;
+    }
+    .btn-info:hover {
+        background-color: #d4af37;
+        color: white;
+    }
+    .table thead th {
+        background-color: #836C2D;
+        color: black;
+    }
+    .table tbody tr:nth-child(even) {
+        background-color: silver;
+    }
+    .table tbody tr:nth-child(odd) {
+        background-color: white;
+    }
+    .alert-warning {
+        background-color: rgb(211, 171, 79);
+        color: black;
+    }
+    .alert-primary {
+        background-color: rgb(211, 171, 79);
+        color: black;
+    }
+    .btn.btn-primary {
+        background-color:#629E34;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        height: 40px;
+        width: 70px;
+        border-color: #836C2D; 
+        box-shadow: 0 0 8px gold;
+        padding: 1px;
+    }
+    .btn.btn-primary:focus, .btn-primary:active {
+    background-color: gold; 
+    box-shadow: 0 0 5px gold; 
+}
 </style>
 <body>
     <?php require "navbar.php"; ?>
@@ -84,7 +146,7 @@ function generateRandomString($length = 10) {
                         <option value="tersedia">Tersedia</option>
                         <option value="habis">Habis</option>
                     </select>
-                </div>
+                </div> <br>
                 <div>
                     <button type="submit" class="btn btn-primary" name="simpan">Simpan</button>
                 </div>

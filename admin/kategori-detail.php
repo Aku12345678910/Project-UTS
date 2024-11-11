@@ -21,11 +21,21 @@
         box-shadow: 0 0 5px gold; 
     }
     body {
-        background-color: #474C46;
+        background-color: #eeece3;
         color: #333;
     }
     h2{
         color: #836C2D;
+    }
+    .btn-submit {
+        background-color:#629E34;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        height: 40px;
+        width: 70px;
+        border-color: #836C2D; 
+        box-shadow: 0 0 5px gold;
     }
 </style>
 <body>

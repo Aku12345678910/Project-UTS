@@ -27,10 +27,63 @@
     <title>Detail Produk</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
+<style>
+    .form-control:focus {
+        border-color: #836C2D; 
+        box-shadow: 0 0 5px gold; 
+    }
+    body {
+        background-color: #eeece3;
+        color: #333;
+    }
+    h2{
+        color: #836C2D;
+    }
+    .btn-submit {
+        background-color:#246F13;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        height: 40px;
+        width: 70px;
+        border-color: #836C2D; 
+        box-shadow: 0 0 5px gold;
+    }
+    .btn.btn-primary {
+        background-color:#629E34;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        height: 40px;
+        width: 70px;
+        border-color: #836C2D; 
+        box-shadow: 0 0 8px gold;
+        padding: 1px;
+    }
+    .btn.btn-primary:focus, .btn-primary:active {
+    background-color: #836C2D; 
+    box-shadow: 0 0 5px gold; 
+    }
+    .btn.btn-danger {
+        background-color:#B10C0C;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        height: 40px;
+        width: 70px;
+        border-color: #836C2D; 
+        box-shadow: 0 0 8px gold;
+        padding: 1px;
+    }
+    .btn.btn-danger:focus, .btn-danger:active {
+    background-color: #836C2D; 
+    box-shadow: 0 0 5px gold; 
+    }
+</style>
 <body>
     <?php require "navbar.php";?>
     <div class="container mt-5">
-    <h2>Detail Kategori</h2>
+    <h2>Detail Produk</h2>
         <div class="col-12 col-md-6">
             <form action="" method="post" enctype="multipart/form-data">
                 <div>
