@@ -88,3 +88,15 @@ a:hover {
 .content-subscribe{
     background-color: #868a85;
 }
+.banner-produk{
+    position: relative; 
+    height: 100vh; 
+}
+.gold-link {
+    color: gold; /* Mengatur warna tautan menjadi emas */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.gold-link:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
