@@ -14,7 +14,7 @@
             <a class="nav-link" href="produk.php">Produk</a>
         </li>
         <li class="nav-item me-4">
-            <a class="nav-link" href="kategori.php">About Us</a>
+            <a class="nav-link" href="tentang.php">About Us</a>
         </li>
       </ul>
     </div>

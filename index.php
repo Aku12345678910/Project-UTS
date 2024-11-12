@@ -55,7 +55,8 @@
         <div class="container text-center">
             <h3>Tentang Kami</h3>
             <p class="fs-5 mt-3">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate minima quisquam qui amet aut excepturi sequi temporibus reiciendis sit libero dolorum quis quo, distinctio magni iusto, accusantium culpa ratione aliquid?
+                Cakraningrat Store merupakan badan usaha milik PC IPNU IPPNU Pamekasan
+                 yang dikelola langsung oleh lembaga ekonomi dan kewirausahaan (LEK) dibawah pengawasan PC IPNU IPPNU Pamekasan
             </p>
         </div>
     </div>

@@ -40,7 +40,6 @@
     position: relative; 
     height: 100vh; 
 }
-
 .background-image {
     position: absolute; /* Memungkinkan gambar untuk diatur */
     top: 50%; /* Memindahkan gambar ke tengah */
