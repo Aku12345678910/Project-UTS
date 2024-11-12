@@ -5,35 +5,59 @@
     background-color: #836C2D;
 }
 .warna3{
-    background-color: #474C46;
+    background-color: #868a85;
 }
 .warna4{
     background-color: #eeece3;
 }
-.banner{
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 4),rgba(0, 0, 0, 4)), url('../image/banner.png');
-}
-.highlighted-kategori{
-    height: 250px;
-}
-.kategori-sop{
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 4),rgba(0, 0, 0, 4)), url('../image/1.png');
+.highlighted-kategori {
+    height: 350px; 
     background-size: cover;
     background-position: center;
+    position: relative; 
+    overflow: hidden; 
 }
-.kategori-rabbani{
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 4),rgba(0, 0, 0, 4)), url('../image/1.png');
-    background-size: cover;
-    background-position: center;
+.kategori-sop {
+    background-image: url('../image/sop.png'); 
 }
-.kategori-drink{
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 4),rgba(0, 0, 0, 4)), url('../image/1.png');
-    background-size: cover;
-    background-position: center;
+
+.kategori-rabbani {
+    background-image: url('../image/rabbani.png'); 
+}
+
+.kategori-drink {
+    background-image: url('../image/drink.png'); 
+}
+
+.highlighted-kategori h4 {
+    position: absolute; /* Memungkinkan teks untuk diposisikan di tengah */
+    top: 50%; /* Memindahkan teks ke tengah */
+    left: 50%; /* Memindahkan teks ke tengah */
+    transform: translate(-50%, -50%); /* Menyelaraskan teks ke tengah */
+    z-index: 1; /* Memastikan teks di atas gambar */
+}
+.banner {
+    position: relative; 
+    height: 100vh; 
+}
+
+.background-image {
+    position: absolute; /* Memungkinkan gambar untuk diatur */
+    top: 50%; /* Memindahkan gambar ke tengah */
+    left: 50%; /* Memindahkan gambar ke tengah */
+    width: 100%; /* Memastikan gambar memenuhi lebar kontainer */
+    height: auto; /* Mempertahankan proporsi gambar */
+    transform: translate(-50%, -50%); /* Menyelaraskan gambar ke tengah */
+    z-index: -1; /* Menempatkan gambar di belakang konten lain */
+}
+
+.content {
+    position: relative; /* Agar konten tetap di atas gambar */
+    z-index: 1; /* Memastikan konten di atas gambar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Menyelaraskan konten secara vertikal */
+    height: 100%; /* Memastikan konten mengisi tinggi banner */
 }
 .no-decoration{
     text-decoration: none;
@@ -41,4 +65,26 @@
 }
 .no-decoration:hover{
     color: #836C2D;
+}
+.text-harga{
+    font-size: 20px;
+}
+.image-box img {
+    width: 100%; /* Pastikan gambar menyesuaikan dengan kotak gambar */
+    height: auto; /* Pastikan proporsi gambar tetap */
+}
+a {
+    color: white; 
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+}
+
+a:hover {
+    color: gold; /* Ganti dengan warna yang Anda inginkan saat tautan dihover */
+}
+.form-control:focus {
+    border-color: #836C2D; 
+    box-shadow: 0 0 5px gold; 
+}
+.content-subscribe{
+    background-color: #868a85;
 }
