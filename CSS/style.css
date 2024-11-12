@@ -50,6 +50,10 @@
     transform: translate(-50%, -50%); /* Menyelaraskan gambar ke tengah */
     z-index: -1; /* Menempatkan gambar di belakang konten lain */
 }
+.text-white a {
+    color: white; /* Change link color to white */
+    text-decoration: none; /* Remove underline from links */
+}
 
 .content {
     position: relative; /* Agar konten tetap di atas gambar */
@@ -73,14 +77,7 @@
     width: 100%; /* Pastikan gambar menyesuaikan dengan kotak gambar */
     height: auto; /* Pastikan proporsi gambar tetap */
 }
-a {
-    color: white; 
-    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
-}
 
-a:hover {
-    color: gold; /* Ganti dengan warna yang Anda inginkan saat tautan dihover */
-}
 .form-control:focus {
     border-color: #836C2D; 
     box-shadow: 0 0 5px gold; 
@@ -92,11 +89,18 @@ a:hover {
     position: relative; 
     height: 100vh; 
 }
-.gold-link {
-    color: gold; /* Mengatur warna tautan menjadi emas */
-    text-decoration: none; /* Menghilangkan garis bawah */
+.list-group-item.active{
+    background-color: rgb(223, 224, 204);
+    color: rgb(26, 25, 25); 
+    border-color: white;
 }
-
-.gold-link:hover {
-    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+.produk-terkait-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.produk-image {
+    max-width: 40%; /* Pastikan gambar tidak melebihi lebar kontainer */
+    height: auto;    /* Menjaga aspek rasio gambar */
 }

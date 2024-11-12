@@ -1,19 +1,36 @@
 <?php
-    require "koneksi.php";
-    $queryKategori = mysqli_query($con, "SELECT * FROM kategori");
+require "koneksi.php";
 
-    if(isset($_GET['keyword'])){
-        $queryProduk =mysqli_query($con, "SELECT * FROM produk WHERE nama LIKE '%$_GET[keyword]%'");
-    }
-    else if(isset($_GET['kategori'])) {
-        $queryGetKategoriId =mysqli_query($con, "SELECT id * FROM kategori WHERE nama='$_GET[keyword]'");
+$queryKategori = mysqli_query($con, "SELECT * FROM kategori");
+
+if (isset($_GET['keyword'])) {
+    $keyword = mysqli_real_escape_string($con, $_GET['keyword']);
+    $queryProduk = mysqli_query($con, "SELECT * FROM produk WHERE nama LIKE '%$keyword%'");
+} else if (isset($_GET['kategori'])) {
+    $kategori = mysqli_real_escape_string($con, $_GET['kategori']);
+    $queryGetKategoriId = mysqli_query($con, "SELECT id FROM kategori WHERE nama='$kategori'");
+
+    if ($queryGetKategoriId) {
         $kategoriId = mysqli_fetch_array($queryGetKategoriId);
-        $queryProduk =mysqli_query($con, "SELECT * FROM produk WHERE kategori_id='$kategoriId[id]'");
+        
+        if ($kategoriId) {
+            $queryProduk = mysqli_query($con, "SELECT * FROM produk WHERE kategori_id='$kategoriId[id]'");
+        } else {
+            $queryProduk = mysqli_query($con, "SELECT * FROM produk");
+        }
+    } else {
+        die("Query Error: " . mysqli_error($con));
     }
-    else{
-        $queryProduk =mysqli_query($con, "SELECT * FROM produk");
-    }
-    $countData = mysqli_num_rows($queryProduk);
+} else {
+    $queryProduk = mysqli_query($con, "SELECT * FROM produk");
+}
+if (!$queryProduk) {
+    die("Query Error: " . mysqli_error($con));
+}
+
+$countData = mysqli_num_rows($queryProduk);
+
+mysqli_close($con);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,9 +50,10 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-3 mb-5">
+                <h3>Kategori</h3>
                 <ul class="list-group">
                     <?php while($kategori = mysqli_fetch_array($queryKategori)){?>
-                    <a class="gold-link" href="produk.php?kategori=<?php echo $kategori['nama'];?>">
+                    <a class="no-decoration" href="produk.php?kategori=<?php echo $kategori['nama'];?>">
                         <li class="list-group-item active"><?php echo $kategori['nama'];?></li>
                     </a>
                     <?php } ?>
